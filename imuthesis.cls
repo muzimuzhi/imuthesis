@@ -138,8 +138,8 @@
 \newcommand\setStudentId[1]{\def\@StudentId{#1}} %学号
 \newcommand\setSecurity[1]{\def\@Security{#1}}   %密级
 \newcommand\setCollege[1]{\def\@College{#1}}     %学院
-\newcommand\setThesisTitle[1]{\def\@ThesisTitle{#1}} %论文题目
-\newcommand\setThesisTitleEng[1]{\def\@ThesisTitleEng{#1}}  %英文题目
+\newcommand\setThesisTitle[1]{\long\def\@ThesisTitle{#1}} %论文题目
+\newcommand\setThesisTitleEng[1]{\long\def\@ThesisTitleEng{#1}}  %英文题目
 \newcommand\setMajor[1]{\def\@Major{#1}}         %专业
 \newcommand\setGrade[1]{\def\@Grade{#1}}         %年级
 \newcommand\setAuthor[1]{\def\@Author{#1}} %学生姓名
@@ -185,7 +185,7 @@
             {
                 \zihao{-0}\heiti{}本科毕业论文(设计)
 
-                \fbox{\zihao{2}\heiti{}\@ThesisTitle}
+                \fbox{\parbox{0.8\textwidth}{\centering\zihao{2}\heiti\@ThesisTitle}}
                 \vspace{0.5cm}
 
                 \zihao{-3}\heiti{}院(系)名称~\underline{\makebox[50mm]{\@College}}
