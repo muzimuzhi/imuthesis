@@ -2,7 +2,7 @@
     % \LaTeX默认图片、表格的排版格式为浮动排版，虽然能保证文本紧凑，但不利于排版样式。本模板在原有的默认样式基础之上新增非浮动模块，具体使用方式如下。
 
     \section{代码段}
-        本模板使用lsting作为代码高亮支持工具。同时配合“\tbs makeremark”工具能够实现为代码添加额外注释。例如我们有如下\LaTeX代码：
+        本模板使用lsting作为代码高亮支持工具。同时配合“\tbs makeremark”工具能够实现为代码添加额外注释。例如我们有如下\LaTeX 代码：
         \begin{quote}
             \lstinputlisting[
                 caption=使用listing插入代码示例
@@ -16,13 +16,13 @@
             label=code:helloworld
         ]{codes/helloworld.cpp}
         
-        当你的代码中有通过/*\#\tbs makeremark{注释内容}\#*/\footnote{相当于所有被包含在“/*\#”和“\#*/”转义字符串之间的代码都会被\LaTeX解释。使用这个转义字符串的好处是能够将包含其中的\LaTeX命令在C、C++、C\#等语言中被当做注释，让程序能够正常编译。如果需要插入其他语言的代码，请修改imuthesis.cls中第91行的代码}添加的额外注释时，使用\tbs showremarks命令就可以将额外注释的内容输出出来：
+        当你的代码中有通过/*\#\tbs makeremark{注释内容}\#*/\footnote{相当于所有被包含在“/*\#”和“\#*/”转义字符串之间的代码都会被\LaTeX 解释。使用这个转义字符串的好处是能够将包含其中的\LaTeX 命令在C、C++、C\#等语言中被当做注释，让程序能够正常编译。如果需要插入其他语言的代码，请修改imuthesis.cls中第91行的代码}添加的额外注释时，使用\tbs showremarks命令就可以将额外注释的内容输出出来：
         \begin{quote}
             \showremarks
         \end{quote}
 
     \section{图片}
-        在\LaTeX中常见的插入图片的方式都会导致图片成为浮动图片，通过minipage的方式可以避免这种情况发生。例如有如下代码：
+        在\LaTeX 中常见的插入图片的方式都会导致图片成为浮动图片，通过minipage的方式可以避免这种情况发生。例如有如下代码：
         \lstinputlisting[
             caption=通过minipage插入非浮动图片。
         ]{codes/figure.tex}
